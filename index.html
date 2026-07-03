@@ -64,6 +64,7 @@
         "name": "Ball Up",
         "description": "A bouncing-ball brick breaker for iPhone: fling a stream of balls, smash through rising brick walls, bank coins, and chase the high score.",
         "url": "https://playhypegames.github.io/ballup/",
+        "image": "https://playhypegames.github.io/icons/ballup.png",
         "operatingSystem": "iOS",
         "gamePlatform": "iOS",
         "applicationCategory": "GameApplication",
@@ -75,6 +76,7 @@
         "name": "Swarmly",
         "description": "A fast, satisfying 3D crowd runner for iPhone and iPad: swipe to steer your squad, blast through multiplier gates, and topple the King at the end of every level.",
         "url": "https://playhypegames.github.io/swarmly/",
+        "image": "https://playhypegames.github.io/icons/swarmly.png",
         "operatingSystem": "iOS",
         "gamePlatform": ["iOS", "iPadOS"],
         "applicationCategory": "GameApplication",
@@ -86,6 +88,7 @@
         "name": "Freedem Birdz",
         "description": "A flappy-style tap-to-flap game for iPhone: tap to flap through the gates, bank coins, and unlock hats, birds, and scenes in the shop. Coming soon.",
         "url": "https://playhypegames.github.io/freedembirdz/",
+        "image": "https://playhypegames.github.io/icons/freedembirdz.png",
         "operatingSystem": "iOS",
         "gamePlatform": "iOS",
         "applicationCategory": "GameApplication",
@@ -209,6 +212,7 @@
     .art { width: 86px; height: 86px; border-radius: 22px; background: linear-gradient(135deg, var(--a), var(--b));
            display: grid; place-items: center; margin-bottom: 18px; box-shadow: 0 10px 30px color-mix(in srgb, var(--a) 40%, transparent); }
     .art svg { width: 62px; height: 62px; }
+    .art img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; display: block; }
     .card-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .card h3 { margin: 0; font-size: 1.45rem; font-weight: 800; }
     .pill { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
@@ -315,13 +319,12 @@
 
       <!-- BALL UP -->
       <article class="card" style="--a:#3a8dff;--b:#22d3ee">
-        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><rect x="10" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".95"/><rect x="38" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".7"/><rect x="66" y="10" width="20" height="14" rx="3" fill="#fff" opacity=".9"/><rect x="24" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".5"/><rect x="52" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".65"/><circle cx="48" cy="52" r="2.2" fill="#fff" opacity=".5"/><circle cx="48" cy="60" r="2.2" fill="#fff" opacity=".7"/><circle cx="48" cy="76" r="11" fill="#fff"/></svg></div>
-        <div class="card-head"><h3>Ball Up</h3><span class="pill live"><span class="dot"></span>Live on the App Store</span></div>
+        <div class="art"><img src="icons/ballup.png" alt="Ball Up app icon" width="86" height="86" loading="lazy" decoding="async"></div>
+        <div class="card-head"><h3>Ball Up</h3><span class="pill soon">Coming soon</span></div>
         <p class="tag">A bouncing-ball brick breaker.</p>
         <p class="desc">Fling a stream of balls, smash through rising brick walls, bank coins, and chase that high score.</p>
         <div class="actions">
-          <!-- TODO: replace href with the real App Store link (https://apps.apple.com/app/id…) -->
-          <a class="btn store" href="https://apps.apple.com/app/id0000000000" target="_blank" rel="noopener">&#8595;&nbsp; App Store</a>
+          <span class="btn store disabled" aria-disabled="true">Coming Soon</span>
           <a class="btn ghost" href="ballup/">Support</a>
         </div>
         <p class="legal-links"><a href="ballup/privacy.html">Privacy</a> &middot; <a href="ballup/terms.html">Terms</a></p>
@@ -329,13 +332,12 @@
 
       <!-- SWARMLY -->
       <article class="card" style="--a:#34d399;--b:#22d3ee">
-        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="58" cy="26" r="7.5" fill="#fff" opacity=".95"/><circle cx="46" cy="44" r="6.5" fill="#fff" opacity=".85"/><circle cx="68" cy="44" r="6.5" fill="#fff" opacity=".8"/><circle cx="34" cy="62" r="6" fill="#fff" opacity=".7"/><circle cx="56" cy="62" r="6" fill="#fff" opacity=".65"/><circle cx="78" cy="62" r="6" fill="#fff" opacity=".6"/><rect x="12" y="78" width="18" height="5" rx="2.5" fill="#fff" opacity=".45"/><rect x="38" y="80" width="12" height="5" rx="2.5" fill="#fff" opacity=".3"/></svg></div>
-        <div class="card-head"><h3>Swarmly</h3><span class="pill live"><span class="dot"></span>Live on the App Store</span></div>
+        <div class="art"><img src="icons/swarmly.png" alt="Swarmly app icon" width="86" height="86" loading="lazy" decoding="async"></div>
+        <div class="card-head"><h3>Swarmly</h3><span class="pill soon">Coming soon</span></div>
         <p class="tag">A fast, satisfying 3D crowd runner.</p>
         <p class="desc">Swipe to steer your squad, blast through &times;2 gates to grow the swarm, and topple the King at the end of every level.</p>
         <div class="actions">
-          <!-- TODO: replace href with the real App Store link (https://apps.apple.com/app/id…) -->
-          <a class="btn store" href="https://apps.apple.com/app/id0000000000" target="_blank" rel="noopener">&#8595;&nbsp; App Store</a>
+          <span class="btn store disabled" aria-disabled="true">Coming Soon</span>
           <a class="btn ghost" href="swarmly/">Support</a>
         </div>
         <p class="legal-links"><a href="swarmly/privacy.html">Privacy</a> &middot; <a href="swarmly/terms.html">Terms</a></p>
@@ -343,7 +345,7 @@
 
       <!-- FREEDEM BIRDZ -->
       <article class="card" style="--a:#f59e0b;--b:#ef4444">
-        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><rect x="74" y="8" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><rect x="74" y="58" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><circle cx="42" cy="52" r="17" fill="#fff"/><path d="M42 50 q-15 3 -19 15 q13 3 22 -7 z" fill="#fff" opacity=".6"/><path d="M57 47 L69 52 L57 57 Z" fill="#fff" opacity=".9"/><circle cx="48" cy="45" r="2.8" fill="#0b0d17" opacity=".65"/></svg></div>
+        <div class="art"><img src="icons/freedembirdz.png" alt="Freedem Birdz app icon" width="86" height="86" loading="lazy" decoding="async"></div>
         <div class="card-head"><h3>Freedem Birdz</h3><span class="pill soon">Coming soon</span></div>
         <p class="tag">A flappy-style tap-to-flap game.</p>
         <p class="desc">Tap to flap through the gates, bank coins on every run, and unlock hats, birds, and scenes in the shop.</p>
