@@ -1,27 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PlayHype Games — Indie iOS Games</title>
-  <meta name="description" content="PlayHype Games is an indie iOS studio making bright, snappy, one-more-run games: Ball Up, Swarmly, and Freedem Birdz.">
-  <meta property="og:title" content="PlayHype Games">
-  <meta property="og:description" content="Indie iOS games built for one more run.">
-  <meta property="og:image" content="https://playhypegames.github.io/logo.svg">
+  <script>document.documentElement.className = "js";</script>
+
+  <!-- Primary SEO -->
+  <title>PlayHype Games — Indie iOS Games (Ball Up, Swarmly, Freedem Birdz)</title>
+  <meta name="description" content="PlayHype Games is an indie iOS studio making bright, snappy, one-more-run iPhone games — Ball Up, Swarmly, and Freedem Birdz. Free on the App Store.">
+  <link rel="canonical" href="https://playhypegames.github.io/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="PlayHype Games">
+  <meta name="keywords" content="PlayHype Games, indie iOS games, iPhone games, mobile games, Ball Up, Swarmly, Freedem Birdz, App Store games, arcade games">
+  <meta name="theme-color" content="#0b0d17">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PlayHype Games">
+  <meta property="og:url" content="https://playhypegames.github.io/">
+  <meta property="og:title" content="PlayHype Games — Indie iOS Games">
+  <meta property="og:description" content="Bright, snappy, one-more-run iPhone games. Ball Up, Swarmly, and Freedem Birdz.">
+  <meta property="og:image" content="https://playhypegames.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:alt" content="PlayHype Games — indie iOS game studio">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PlayHype Games — Indie iOS Games">
+  <meta name="twitter:description" content="Bright, snappy, one-more-run iPhone games.">
+  <meta name="twitter:image" content="https://playhypegames.github.io/og-image.png">
+
+  <!-- Icons -->
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="%237c3aed"/><stop offset=".55" stop-color="%23ec4899"/><stop offset="1" stop-color="%23f59e0b"/></linearGradient></defs><rect x="4" y="4" width="112" height="112" rx="27" fill="url(%23g)"/><rect x="24" y="42" width="14" height="8" rx="4" fill="white" opacity=".9"/><rect x="16" y="56" width="22" height="8" rx="4" fill="white" opacity=".7"/><rect x="24" y="70" width="14" height="8" rx="4" fill="white" opacity=".9"/><path d="M52 38 L90 60 L52 82 Z" fill="white" stroke="white" stroke-width="10" stroke-linejoin="round"/></svg>'>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Structured data: studio + each game -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://playhypegames.github.io/#studio",
+        "name": "PlayHype Games",
+        "url": "https://playhypegames.github.io/",
+        "logo": "https://playhypegames.github.io/logo.svg",
+        "image": "https://playhypegames.github.io/og-image.png",
+        "email": "playhypegames@gmail.com",
+        "description": "Indie iOS game studio making bright, snappy, one-more-run games for iPhone."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://playhypegames.github.io/#website",
+        "url": "https://playhypegames.github.io/",
+        "name": "PlayHype Games",
+        "publisher": { "@id": "https://playhypegames.github.io/#studio" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Ball Up",
+        "description": "A bouncing-ball brick breaker for iPhone: fling a stream of balls, smash through rising brick walls, bank coins, and chase the high score.",
+        "url": "https://playhypegames.github.io/ballup/",
+        "operatingSystem": "iOS",
+        "gamePlatform": "iOS",
+        "applicationCategory": "GameApplication",
+        "publisher": { "@id": "https://playhypegames.github.io/#studio" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Swarmly",
+        "description": "A fast, satisfying 3D crowd runner for iPhone and iPad: swipe to steer your squad, blast through multiplier gates, and topple the King at the end of every level.",
+        "url": "https://playhypegames.github.io/swarmly/",
+        "operatingSystem": "iOS",
+        "gamePlatform": ["iOS", "iPadOS"],
+        "applicationCategory": "GameApplication",
+        "publisher": { "@id": "https://playhypegames.github.io/#studio" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Freedem Birdz",
+        "description": "A flappy-style tap-to-flap game for iPhone: tap to flap through the gates, bank coins, and unlock hats, birds, and scenes in the shop. Coming soon.",
+        "url": "https://playhypegames.github.io/freedembirdz/",
+        "operatingSystem": "iOS",
+        "gamePlatform": "iOS",
+        "applicationCategory": "GameApplication",
+        "publisher": { "@id": "https://playhypegames.github.io/#studio" }
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0b0d17;
-      --panel: rgba(255,255,255,0.035);
-      --line: rgba(255,255,255,0.09);
-      --text: #eef0ff;
-      --dim: #9aa3c7;
-      --violet: #7c3aed;
-      --pink: #ec4899;
-      --amber: #f59e0b;
-      --cyan: #22d3ee;
-      --green: #34d399;
+      --bg: #0b0d17; --panel: rgba(255,255,255,0.035); --line: rgba(255,255,255,0.09);
+      --text: #eef0ff; --dim: #9aa3c7;
+      --violet: #7c3aed; --pink: #ec4899; --amber: #f59e0b; --cyan: #22d3ee; --green: #34d399;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -32,23 +111,17 @@
         radial-gradient(900px 500px at 80% -10%, rgba(124,58,237,0.22), transparent 60%),
         radial-gradient(800px 500px at -10% 30%, rgba(236,72,153,0.12), transparent 60%),
         var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
+      color: var(--text); line-height: 1.6; overflow-x: hidden;
     }
     ::selection { background: var(--pink); color: #fff; }
     a { color: var(--cyan); }
-
     #bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
     .wrap { position: relative; z-index: 1; }
 
-    /* ---------- nav ---------- */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 10;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 12px 22px;
-      background: rgba(11,13,23,0.7);
-      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      display: flex; align-items: center; justify-content: space-between; padding: 12px 22px;
+      background: rgba(11,13,23,0.7); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--line);
     }
     .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
@@ -62,18 +135,16 @@
     }
     .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.06); }
 
-    /* ---------- hero ---------- */
     .hero {
-      min-height: 92vh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 92vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center; padding: 110px 20px 40px;
     }
-    .hero > * { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
-    .hero > *:nth-child(2) { animation-delay: .08s; }
-    .hero > *:nth-child(3) { animation-delay: .16s; }
-    .hero > *:nth-child(4) { animation-delay: .24s; }
-    .hero > *:nth-child(5) { animation-delay: .32s; }
-    .hero > *:nth-child(6) { animation-delay: .40s; }
+    .js .hero > * { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+    .js .hero > *:nth-child(2) { animation-delay: .08s; }
+    .js .hero > *:nth-child(3) { animation-delay: .16s; }
+    .js .hero > *:nth-child(4) { animation-delay: .24s; }
+    .js .hero > *:nth-child(5) { animation-delay: .32s; }
+    .js .hero > *:nth-child(6) { animation-delay: .40s; }
     @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
     .studio-pill {
@@ -94,41 +165,29 @@
       background: linear-gradient(100deg, var(--violet), var(--pink) 45%, var(--amber));
       -webkit-background-clip: text; background-clip: text; color: transparent;
     }
-    h1 .gm {
-      display: block; font-size: clamp(0.95rem, 3vw, 1.35rem); font-weight: 700;
-      letter-spacing: 0.55em; text-indent: 0.55em; color: var(--dim); margin-top: 8px;
-    }
+    h1 .gm { display: block; font-size: clamp(0.95rem, 3vw, 1.35rem); font-weight: 700;
+             letter-spacing: 0.55em; text-indent: 0.55em; color: var(--dim); margin-top: 8px; }
     .tagline { max-width: 500px; color: var(--dim); font-size: 1.08rem; margin: 18px 0 30px; }
     .ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 13px 24px; border-radius: 14px; text-decoration: none;
-      font-weight: 700; font-size: 0.98rem; transition: transform .15s, box-shadow .15s, background .15s;
-    }
-    .btn.primary {
-      background: linear-gradient(100deg, var(--violet), var(--pink) 60%, var(--amber));
-      color: #fff; box-shadow: 0 8px 28px rgba(236,72,153,0.35);
-    }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 24px; border-radius: 14px;
+           text-decoration: none; font-weight: 700; font-size: 0.98rem;
+           transition: transform .15s, box-shadow .15s, background .15s; }
+    .btn.primary { background: linear-gradient(100deg, var(--violet), var(--pink) 60%, var(--amber));
+                   color: #fff; box-shadow: 0 8px 28px rgba(236,72,153,0.35); }
     .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(236,72,153,0.5); }
     .btn.ghost { border: 1px solid var(--line); color: var(--text); background: rgba(255,255,255,0.04); }
     .btn.ghost:hover { transform: translateY(-2px); background: rgba(255,255,255,0.08); }
     .hint { color: var(--dim); opacity: 0.6; font-size: 0.8rem; margin-top: 34px; }
 
-    /* ---------- marquee ---------- */
-    .marquee {
-      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-      overflow: hidden; white-space: nowrap; padding: 13px 0;
-      background: rgba(255,255,255,0.02);
-    }
-    .marquee-track { display: inline-block; animation: slide 32s linear infinite; }
-    .marquee span {
-      font-weight: 800; letter-spacing: 0.28em; text-transform: uppercase; font-size: 0.82rem;
-      color: var(--dim); margin: 0 26px;
-    }
+    .marquee { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+               overflow: hidden; white-space: nowrap; padding: 13px 0; background: rgba(255,255,255,0.02); }
+    .marquee-track { display: inline-block; will-change: transform; }
+    .js .marquee-track { animation: slide 32s linear infinite; }
+    .marquee span { font-weight: 800; letter-spacing: 0.28em; text-transform: uppercase; font-size: 0.82rem;
+                    color: var(--dim); margin: 0 26px; }
     .marquee .star { color: var(--pink); margin: 0; }
     @keyframes slide { to { transform: translateX(-50%); } }
 
-    /* ---------- games ---------- */
     .sec { max-width: 1080px; margin: 0 auto; padding: 90px 22px 30px; }
     .sec-head { text-align: center; margin-bottom: 48px; }
     .sec-head h2 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; margin: 0 0 8px; }
@@ -137,35 +196,26 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
     .card {
       position: relative; overflow: hidden;
-      background: var(--panel); border: 1px solid var(--line); border-radius: 22px;
-      padding: 26px 24px 22px;
+      background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 26px 24px 22px;
       transform: perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
       transition: transform .18s ease-out, border-color .25s, opacity .6s, translate .6s;
-      opacity: 0; translate: 0 24px;
     }
-    .card.in { opacity: 1; translate: 0 0; }
+    .js .card { opacity: 0; translate: 0 24px; }
+    .js .card.in { opacity: 1; translate: 0 0; }
     .card:hover { border-color: color-mix(in srgb, var(--a) 55%, transparent); }
-    .card::after {
-      content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
-      background: radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.07), transparent 45%);
-    }
+    .card::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s;
+      background: radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.07), transparent 45%); }
     .card:hover::after { opacity: 1; }
-    .art {
-      width: 86px; height: 86px; border-radius: 22px;
-      background: linear-gradient(135deg, var(--a), var(--b));
-      display: grid; place-items: center; margin-bottom: 18px;
-      box-shadow: 0 10px 30px color-mix(in srgb, var(--a) 40%, transparent);
-    }
+    .art { width: 86px; height: 86px; border-radius: 22px; background: linear-gradient(135deg, var(--a), var(--b));
+           display: grid; place-items: center; margin-bottom: 18px; box-shadow: 0 10px 30px color-mix(in srgb, var(--a) 40%, transparent); }
     .art svg { width: 62px; height: 62px; }
-    .art .emoji { font-size: 42px; }
     .card-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .card h3 { margin: 0; font-size: 1.45rem; font-weight: 800; }
-    .pill {
-      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
-      padding: 4px 11px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px;
-    }
+    .pill { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+            padding: 4px 11px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px; }
     .pill.live { color: var(--green); background: rgba(52,211,153,0.12); border: 1px solid rgba(52,211,153,0.35); }
-    .pill.live .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: pulse 1.6s ease-out infinite; }
+    .pill.live .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+    .js .pill.live .dot { animation: pulse 1.6s ease-out infinite; }
     @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(52,211,153,0.55); } 100% { box-shadow: 0 0 0 9px rgba(52,211,153,0); } }
     .pill.soon { color: var(--amber); background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.35); }
     .card .tag { color: var(--text); font-weight: 600; margin: 12px 0 4px; }
@@ -179,24 +229,20 @@
     .legal-links a { color: var(--dim); text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.25); }
     .legal-links a:hover { color: var(--text); }
 
-    /* ---------- footer ---------- */
     footer { border-top: 1px solid var(--line); margin-top: 90px; padding: 44px 22px 54px; }
     .foot { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
     .foot .brand svg { width: 36px; height: 36px; }
     .foot-col p { margin: 8px 0 0; color: var(--dim); font-size: 0.88rem; }
-    .foot-col h4 { margin: 0 0 10px; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim); }
+    .foot-col h2 { margin: 0 0 10px; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--dim); font-weight: 700; }
     .foot-col a { color: var(--dim); text-decoration: none; display: block; font-size: 0.9rem; padding: 3px 0; }
     .foot-col a:hover { color: var(--text); }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero > *, .marquee-track, .pill.live .dot { animation: none !important; }
-      .card { opacity: 1; translate: none; transition: none; }
+      .js .hero > *, .marquee-track, .pill.live .dot { animation: none !important; }
+      .js .card { opacity: 1; translate: none; transition: none; }
       html { scroll-behavior: auto; }
     }
-    @media (max-width: 560px) {
-      .nav-links a { padding: 7px 10px; }
-      .sec { padding-top: 70px; }
-    }
+    @media (max-width: 560px) { .nav-links a { padding: 7px 10px; } .sec { padding-top: 70px; } }
   </style>
 </head>
 <body>
@@ -204,7 +250,7 @@
 <div class="wrap">
 
   <nav>
-    <a class="brand" href="#" aria-label="PlayHype Games home">
+    <a class="brand" href="/" aria-label="PlayHype Games home">
       <svg viewBox="0 0 120 120" role="img" aria-label="PlayHype Games logo">
         <defs><linearGradient id="lg-nav" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stop-color="#7c3aed"/><stop offset=".55" stop-color="#ec4899"/><stop offset="1" stop-color="#f59e0b"/>
@@ -245,20 +291,76 @@
     <p class="hint">psst — click the logo</p>
   </header>
 
-  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">
+    <span>Ball Up</span><span class="star">&#10022;</span><span>Swarmly</span><span class="star">&#10022;</span><span>Freedem Birdz</span><span class="star">&#10022;</span>
+    <span>Ball Up</span><span class="star">&#10022;</span><span>Swarmly</span><span class="star">&#10022;</span><span>Freedem Birdz</span><span class="star">&#10022;</span>
+    <span>Ball Up</span><span class="star">&#10022;</span><span>Swarmly</span><span class="star">&#10022;</span><span>Freedem Birdz</span><span class="star">&#10022;</span>
+    <span>Ball Up</span><span class="star">&#10022;</span><span>Swarmly</span><span class="star">&#10022;</span><span>Freedem Birdz</span><span class="star">&#10022;</span>
+  </div></div>
 
   <main class="sec" id="games">
     <div class="sec-head">
       <h2>Our Games</h2>
       <p>New titles land here as we ship them.</p>
     </div>
-    <div class="grid" id="grid"></div>
+
+    <div class="grid">
+      <!-- ============================================================
+           TO ADD A GAME: copy one <article> block below and edit it.
+           Also add a matching VideoGame entry to the JSON-LD in <head>
+           and a <url> to sitemap.xml. Full recipe: README.md.
+           status live  → green badge + real App Store link
+           status soon  → amber badge + disabled button
+           ============================================================ -->
+
+      <!-- BALL UP -->
+      <article class="card" style="--a:#3a8dff;--b:#22d3ee">
+        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><rect x="10" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".95"/><rect x="38" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".7"/><rect x="66" y="10" width="20" height="14" rx="3" fill="#fff" opacity=".9"/><rect x="24" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".5"/><rect x="52" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".65"/><circle cx="48" cy="52" r="2.2" fill="#fff" opacity=".5"/><circle cx="48" cy="60" r="2.2" fill="#fff" opacity=".7"/><circle cx="48" cy="76" r="11" fill="#fff"/></svg></div>
+        <div class="card-head"><h3>Ball Up</h3><span class="pill live"><span class="dot"></span>Live on the App Store</span></div>
+        <p class="tag">A bouncing-ball brick breaker.</p>
+        <p class="desc">Fling a stream of balls, smash through rising brick walls, bank coins, and chase that high score.</p>
+        <div class="actions">
+          <!-- TODO: replace href with the real App Store link (https://apps.apple.com/app/id…) -->
+          <a class="btn store" href="https://apps.apple.com/app/id0000000000" target="_blank" rel="noopener">&#8595;&nbsp; App Store</a>
+          <a class="btn ghost" href="ballup/">Support</a>
+        </div>
+        <p class="legal-links"><a href="ballup/privacy.html">Privacy</a> &middot; <a href="ballup/terms.html">Terms</a></p>
+      </article>
+
+      <!-- SWARMLY -->
+      <article class="card" style="--a:#34d399;--b:#22d3ee">
+        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="58" cy="26" r="7.5" fill="#fff" opacity=".95"/><circle cx="46" cy="44" r="6.5" fill="#fff" opacity=".85"/><circle cx="68" cy="44" r="6.5" fill="#fff" opacity=".8"/><circle cx="34" cy="62" r="6" fill="#fff" opacity=".7"/><circle cx="56" cy="62" r="6" fill="#fff" opacity=".65"/><circle cx="78" cy="62" r="6" fill="#fff" opacity=".6"/><rect x="12" y="78" width="18" height="5" rx="2.5" fill="#fff" opacity=".45"/><rect x="38" y="80" width="12" height="5" rx="2.5" fill="#fff" opacity=".3"/></svg></div>
+        <div class="card-head"><h3>Swarmly</h3><span class="pill live"><span class="dot"></span>Live on the App Store</span></div>
+        <p class="tag">A fast, satisfying 3D crowd runner.</p>
+        <p class="desc">Swipe to steer your squad, blast through &times;2 gates to grow the swarm, and topple the King at the end of every level.</p>
+        <div class="actions">
+          <!-- TODO: replace href with the real App Store link (https://apps.apple.com/app/id…) -->
+          <a class="btn store" href="https://apps.apple.com/app/id0000000000" target="_blank" rel="noopener">&#8595;&nbsp; App Store</a>
+          <a class="btn ghost" href="swarmly/">Support</a>
+        </div>
+        <p class="legal-links"><a href="swarmly/privacy.html">Privacy</a> &middot; <a href="swarmly/terms.html">Terms</a></p>
+      </article>
+
+      <!-- FREEDEM BIRDZ -->
+      <article class="card" style="--a:#f59e0b;--b:#ef4444">
+        <div class="art"><svg viewBox="0 0 96 96" aria-hidden="true"><rect x="74" y="8" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><rect x="74" y="58" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><circle cx="42" cy="52" r="17" fill="#fff"/><path d="M42 50 q-15 3 -19 15 q13 3 22 -7 z" fill="#fff" opacity=".6"/><path d="M57 47 L69 52 L57 57 Z" fill="#fff" opacity=".9"/><circle cx="48" cy="45" r="2.8" fill="#0b0d17" opacity=".65"/></svg></div>
+        <div class="card-head"><h3>Freedem Birdz</h3><span class="pill soon">Coming soon</span></div>
+        <p class="tag">A flappy-style tap-to-flap game.</p>
+        <p class="desc">Tap to flap through the gates, bank coins on every run, and unlock hats, birds, and scenes in the shop.</p>
+        <div class="actions">
+          <span class="btn store disabled" aria-disabled="true">Coming Soon</span>
+          <a class="btn ghost" href="freedembirdz/">Support</a>
+        </div>
+        <p class="legal-links"><a href="freedembirdz/privacy.html">Privacy</a> &middot; <a href="freedembirdz/terms.html">Terms</a></p>
+      </article>
+
+    </div>
   </main>
 
   <footer>
     <div class="foot">
       <div class="foot-col">
-        <a class="brand" href="#">
+        <a class="brand" href="/">
           <svg viewBox="0 0 120 120" aria-hidden="true">
             <defs><linearGradient id="lg-foot" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0" stop-color="#7c3aed"/><stop offset=".55" stop-color="#ec4899"/><stop offset="1" stop-color="#f59e0b"/>
@@ -274,12 +376,14 @@
         <p>&copy; 2026 PlayHype Games. All rights reserved.</p>
       </div>
       <div class="foot-col">
-        <h4>Contact</h4>
+        <h2>Contact</h2>
         <a href="mailto:playhypegames@gmail.com">playhypegames@gmail.com</a>
       </div>
       <div class="foot-col">
-        <h4>Support &amp; Legal</h4>
-        <div id="foot-legal"></div>
+        <h2>Support &amp; Legal</h2>
+        <a href="ballup/">Ball Up</a>
+        <a href="swarmly/">Swarmly</a>
+        <a href="freedembirdz/">Freedem Birdz</a>
       </div>
     </div>
   </footer>
@@ -287,87 +391,10 @@
 </div>
 
 <script>
-/* ================================================================
-   HOW TO ADD A GAME  🎮
-   ----------------------------------------------------------------
-   1. Copy any object below and paste it into the GAMES array.
-   2. Fill in name / tagline / desc / two accent colors.
-   3. status: "live" shows a green badge + App Store button.
-      status: "soon" shows an amber badge + disabled button.
-   4. appStore: paste the real App Store link when you have it
-      (looks like https://apps.apple.com/app/id1234567890).
-   5. pages: the folder holding that game's support/privacy/terms
-      pages (create it by copying an existing one, e.g. /ballup).
-   6. art: optional inline SVG for the icon tile. No art? Just use
-      icon: "🚀" (any emoji) instead — it renders automatically.
-   The card, marquee strip, and footer links all build themselves.
-   ================================================================ */
-const GAMES = [
-  {
-    id: "ballup",
-    name: "Ball Up",
-    tagline: "A bouncing-ball brick breaker.",
-    desc: "Fling a stream of balls, smash through rising brick walls, bank coins, and chase that high score.",
-    status: "live",
-    appStore: "https://apps.apple.com/app/id0000000000", /* ← PASTE REAL BALL UP LINK HERE */
-    pages: "ballup",
-    accent: "#3a8dff", accent2: "#22d3ee",
-    art: '<svg viewBox="0 0 96 96" aria-hidden="true"><rect x="10" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".95"/><rect x="38" y="10" width="22" height="14" rx="3" fill="#fff" opacity=".7"/><rect x="66" y="10" width="20" height="14" rx="3" fill="#fff" opacity=".9"/><rect x="24" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".5"/><rect x="52" y="30" width="22" height="14" rx="3" fill="#fff" opacity=".65"/><circle cx="48" cy="52" r="2.2" fill="#fff" opacity=".5"/><circle cx="48" cy="60" r="2.2" fill="#fff" opacity=".7"/><circle cx="48" cy="76" r="11" fill="#fff"/></svg>'
-  },
-  {
-    id: "swarmly",
-    name: "Swarmly",
-    tagline: "A fast, satisfying 3D crowd runner.",
-    desc: "Swipe to steer your squad, blast through ×2 gates to grow the swarm, and topple the King at the end of every level.",
-    status: "live",
-    appStore: "https://apps.apple.com/app/id0000000000", /* ← PASTE REAL SWARMLY LINK HERE */
-    pages: "swarmly",
-    accent: "#34d399", accent2: "#22d3ee",
-    art: '<svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="58" cy="26" r="7.5" fill="#fff" opacity=".95"/><circle cx="46" cy="44" r="6.5" fill="#fff" opacity=".85"/><circle cx="68" cy="44" r="6.5" fill="#fff" opacity=".8"/><circle cx="34" cy="62" r="6" fill="#fff" opacity=".7"/><circle cx="56" cy="62" r="6" fill="#fff" opacity=".65"/><circle cx="78" cy="62" r="6" fill="#fff" opacity=".6"/><rect x="12" y="78" width="18" height="5" rx="2.5" fill="#fff" opacity=".45"/><rect x="38" y="80" width="12" height="5" rx="2.5" fill="#fff" opacity=".3"/></svg>'
-  },
-  {
-    id: "freedembirdz",
-    name: "Freedem Birdz",
-    tagline: "A flappy-style tap-to-flap game.",
-    desc: "Tap to flap through the gates, bank coins on every run, and unlock hats, birds, and scenes in the shop.",
-    status: "soon",
-    appStore: "", /* ← PASTE APP STORE LINK WHEN IT SHIPS */
-    pages: "freedembirdz",
-    accent: "#f59e0b", accent2: "#ef4444",
-    art: '<svg viewBox="0 0 96 96" aria-hidden="true"><rect x="74" y="8" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><rect x="74" y="58" width="11" height="30" rx="3" fill="#fff" opacity=".5"/><circle cx="42" cy="52" r="17" fill="#fff"/><path d="M42 50 q-15 3 -19 15 q13 3 22 -7 z" fill="#fff" opacity=".6"/><path d="M57 47 L69 52 L57 57 Z" fill="#fff" opacity=".9"/><circle cx="48" cy="45" r="2.8" fill="#0b0d17" opacity=".65"/></svg>'
-  }
-];
-
-/* ---------- render game cards ---------- */
-const grid = document.getElementById("grid");
-grid.innerHTML = GAMES.map(g => {
-  const live = g.status === "live";
-  const pill = live
-    ? '<span class="pill live"><span class="dot"></span>Live on the App Store</span>'
-    : '<span class="pill soon">Coming soon</span>';
-  const store = live && g.appStore
-    ? `<a class="btn store" href="${g.appStore}" target="_blank" rel="noopener">&#8595;&nbsp; App Store</a>`
-    : '<span class="btn store disabled" aria-disabled="true">Coming Soon</span>';
-  const art = g.art || `<span class="emoji">${g.icon || "🎮"}</span>`;
-  return `<article class="card" style="--a:${g.accent};--b:${g.accent2}">
-    <div class="art">${art}</div>
-    <div class="card-head"><h3>${g.name}</h3>${pill}</div>
-    <p class="tag">${g.tagline}</p>
-    <p class="desc">${g.desc}</p>
-    <div class="actions">${store}<a class="btn ghost" href="${g.pages}/">Support</a></div>
-    <p class="legal-links"><a href="${g.pages}/privacy.html">Privacy</a> &middot; <a href="${g.pages}/terms.html">Terms</a></p>
-  </article>`;
-}).join("");
-
-/* ---------- marquee + footer build themselves from GAMES ---------- */
-const names = GAMES.map(g => `<span>${g.name}</span><span class="star">&#10022;</span>`).join("");
-document.getElementById("marquee").innerHTML = names.repeat(6);
-document.getElementById("foot-legal").innerHTML =
-  GAMES.map(g => `<a href="${g.pages}/">${g.name}</a>`).join("");
-
-/* ---------- entrance animation ---------- */
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-if (!reduced) {
+
+/* entrance animation on scroll */
+if (!reduced && "IntersectionObserver" in window) {
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
   }), { threshold: 0.15 });
@@ -376,7 +403,7 @@ if (!reduced) {
   document.querySelectorAll(".card").forEach(el => el.classList.add("in"));
 }
 
-/* ---------- card tilt (desktop pointers only) ---------- */
+/* card tilt (desktop pointers only) */
 if (!reduced && matchMedia("(hover:hover) and (pointer:fine)").matches) {
   document.querySelectorAll(".card").forEach(el => {
     el.addEventListener("pointermove", e => {
@@ -388,16 +415,15 @@ if (!reduced && matchMedia("(hover:hover) and (pointer:fine)").matches) {
       el.style.setProperty("--my", (py * 100).toFixed(1) + "%");
     });
     el.addEventListener("pointerleave", () => {
-      el.style.setProperty("--ry", "0deg");
-      el.style.setProperty("--rx", "0deg");
+      el.style.setProperty("--ry", "0deg"); el.style.setProperty("--rx", "0deg");
     });
   });
 }
 
-/* ---------- floating background + confetti ---------- */
+/* floating background + confetti (pauses when tab hidden) */
 const cv = document.getElementById("bg"), cx = cv.getContext("2d");
 const PALETTE = ["#7c3aed", "#ec4899", "#f59e0b", "#22d3ee", "#34d399"];
-let W, H, DPR, orbs = [], confetti = [], tx = 0, ty = 0, mx = 0, my = 0;
+let W, H, DPR, orbs = [], confetti = [], tx = 0, ty = 0, mx = 0, my = 0, running = true;
 
 function sizeCanvas() {
   DPR = Math.min(devicePixelRatio || 1, 2);
@@ -408,68 +434,57 @@ function sizeCanvas() {
 }
 function makeOrbs() {
   orbs = Array.from({ length: 55 }, () => ({
-    x: Math.random(), y: Math.random(),
-    r: 0.8 + Math.random() * 2.4,
-    d: 0.25 + Math.random() * 0.75,            // depth → parallax + alpha
-    vx: (Math.random() - 0.5) * 0.00022,
-    vy: (Math.random() - 0.5) * 0.00022,
+    x: Math.random(), y: Math.random(), r: 0.8 + Math.random() * 2.4, d: 0.25 + Math.random() * 0.75,
+    vx: (Math.random() - 0.5) * 0.00022, vy: (Math.random() - 0.5) * 0.00022,
     c: PALETTE[Math.floor(Math.random() * PALETTE.length)]
   }));
 }
 function drawOrbs() {
   for (const o of orbs) {
     o.x = (o.x + o.vx + 1) % 1; o.y = (o.y + o.vy + 1) % 1;
-    cx.globalAlpha = 0.32 * o.d;
-    cx.fillStyle = o.c;
-    cx.beginPath();
-    cx.arc(o.x * W + mx * 26 * o.d, o.y * H + my * 26 * o.d, o.r * o.d * 2.4, 0, 7);
-    cx.fill();
+    cx.globalAlpha = 0.32 * o.d; cx.fillStyle = o.c;
+    cx.beginPath(); cx.arc(o.x * W + mx * 26 * o.d, o.y * H + my * 26 * o.d, o.r * o.d * 2.4, 0, 7); cx.fill();
   }
   cx.globalAlpha = 1;
 }
 function burst(x, y) {
   for (let i = 0; i < 90; i++) confetti.push({
-    x, y,
-    vx: (Math.random() - 0.5) * 11,
-    vy: -3 - Math.random() * 9,
-    w: 5 + Math.random() * 5, h: 7 + Math.random() * 5,
-    rot: Math.random() * 6.28, vr: (Math.random() - 0.5) * 0.35,
-    life: 95, c: PALETTE[Math.floor(Math.random() * PALETTE.length)]
+    x, y, vx: (Math.random() - 0.5) * 11, vy: -3 - Math.random() * 9,
+    w: 5 + Math.random() * 5, h: 7 + Math.random() * 5, rot: Math.random() * 6.28,
+    vr: (Math.random() - 0.5) * 0.35, life: 95, c: PALETTE[Math.floor(Math.random() * PALETTE.length)]
   });
 }
 function drawConfetti() {
   confetti = confetti.filter(p => p.life > 0 && p.y < H + 40);
   for (const p of confetti) {
     p.x += p.vx; p.y += p.vy; p.vy += 0.32; p.rot += p.vr; p.life--;
-    cx.save();
-    cx.translate(p.x, p.y); cx.rotate(p.rot);
-    cx.globalAlpha = Math.min(1, p.life / 28);
-    cx.fillStyle = p.c;
-    cx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
-    cx.restore();
+    cx.save(); cx.translate(p.x, p.y); cx.rotate(p.rot);
+    cx.globalAlpha = Math.min(1, p.life / 28); cx.fillStyle = p.c;
+    cx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); cx.restore();
   }
   cx.globalAlpha = 1;
 }
 sizeCanvas(); makeOrbs();
 addEventListener("resize", sizeCanvas);
+document.addEventListener("visibilitychange", () => {
+  running = !document.hidden;
+  if (running && !reduced) loop();
+});
+function loop() {
+  if (!running) return;
+  mx += (tx - mx) * 0.04; my += (ty - my) * 0.04;
+  cx.clearRect(0, 0, W, H); drawOrbs(); drawConfetti();
+  if (running) requestAnimationFrame(loop);
+}
 if (!reduced) {
   addEventListener("pointermove", e => { tx = e.clientX / W - 0.5; ty = e.clientY / H - 0.5; }, { passive: true });
-  (function loop() {
-    mx += (tx - mx) * 0.04; my += (ty - my) * 0.04;
-    cx.clearRect(0, 0, W, H);
-    drawOrbs(); drawConfetti();
-    requestAnimationFrame(loop);
-  })();
+  loop();
 } else { drawOrbs(); }
 
-/* logo click → confetti + bounce */
 const logo = document.getElementById("logo");
 logo.addEventListener("click", () => {
   logo.classList.remove("pop"); void logo.offsetWidth; logo.classList.add("pop");
-  if (!reduced) {
-    const r = logo.getBoundingClientRect();
-    burst(r.left + r.width / 2, r.top + r.height / 2);
-  }
+  if (!reduced) { const r = logo.getBoundingClientRect(); burst(r.left + r.width / 2, r.top + r.height / 2); }
 });
 </script>
 </body>

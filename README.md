@@ -6,33 +6,47 @@ Live at **https://playhypegames.github.io/** (GitHub Pages, auto-deploys from `m
 ## Layout
 
 ```
-index.html          ← homepage (logo, game cards, everything)
-logo.svg            ← standalone brand logo (reuse for socials/press)
-ballup/             ← Ball Up support + privacy + terms
-swarmly/            ← Swarmly support + privacy + terms
-freedembirdz/       ← Freedem Birdz support + privacy + terms
+index.html          ← homepage (logo, game cards, SEO meta, structured data)
+logo.svg            ← brand logo lockup (for socials / press)
+og-image.png        ← 1200×1200 social share image
+apple-touch-icon.png
+robots.txt          ← allows crawlers, points to the sitemap
+sitemap.xml         ← every indexable URL
+ballup/  swarmly/  freedembirdz/   ← each game's support + privacy + terms
 ```
 
-⚠️ The per-game folders are **live URLs referenced inside the shipped apps** —
-don't rename or delete them.
+⚠️ The per-game folders are **live URLs referenced inside the shipped apps** — don't
+rename or delete them.
 
 ## How to add a game
 
-Everything on the homepage (card, marquee, footer links) is generated from the
-`GAMES` array at the top of the `<script>` in `index.html`.
+The homepage cards are **static HTML** (deliberately — it's better for SEO than
+JS-generated content: crawlable, no layout shift). To add a game:
 
-1. Copy an existing game's folder (e.g. `ballup/` → `newgame/`) and edit the
-   privacy/terms/support HTML for the new game.
-2. In `index.html`, copy one object in the `GAMES` array and edit:
-   - `name`, `tagline`, `desc` — the card copy
-   - `status` — `"live"` (green badge + App Store button) or `"soon"` (amber badge)
-   - `appStore` — the real App Store link (`https://apps.apple.com/app/id…`)
-   - `pages` — the folder name from step 1
-   - `accent` / `accent2` — two colors for the card's gradient
-   - `art` — optional inline SVG icon; or delete it and set `icon: "🚀"` (any emoji)
-3. Commit + push. Pages redeploys automatically in ~a minute.
+1. **Card** — in `index.html`, copy one `<article class="card">…</article>` block inside
+   `<div class="grid">` and edit it: name, tagline, description, the two accent colors
+   (`--a` / `--b` in the `style`), and the App Store link. Use the **live** badge +
+   `<a class="btn store">` for shipped games, or the **soon** badge +
+   `<span class="btn store disabled">Coming Soon</span>` for upcoming ones.
+2. **Structured data** — copy one `"@type": "VideoGame"` object in the JSON-LD `@graph`
+   in `<head>` and edit name / description / url.
+3. **Sitemap** — add the game's `/support/` `<url>` entries to `sitemap.xml`.
+4. **Support pages** — copy an existing game folder (e.g. `ballup/` → `newgame/`) and edit
+   its privacy / terms / support HTML.
+5. **Nice-to-have** — add the name to the `.marquee` strip and the footer "Support & Legal"
+   list (both static in `index.html`).
 
-## Updating App Store links
+Commit + push — Pages redeploys in ~a minute.
 
-Search `index.html` for `PASTE` — each game's `appStore` field has a marked
-placeholder. Replace with the real link and push.
+## Updating the App Store links
+
+The two live games use placeholder links. Search `index.html` for **`id0000000000`** and
+replace each with the real App Store URL (`https://apps.apple.com/app/id…`).
+
+## SEO notes
+
+- Title, meta description, canonical, Open Graph, Twitter card, and `theme-color` are all set.
+- Structured data: `Organization` + `WebSite` + one `VideoGame` per game (JSON-LD).
+- `robots.txt` + `sitemap.xml` are served at the root.
+- **After deploying**, submit the site + sitemap in
+  [Google Search Console](https://search.google.com/search-console) to get indexed faster.
