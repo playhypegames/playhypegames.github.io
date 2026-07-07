@@ -235,6 +235,38 @@
     .legal-links a { color: var(--dim); text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.25); }
     .legal-links a:hover { color: var(--text); }
 
+    .notify-sec { max-width: 720px; margin: 30px auto 0; padding: 0 22px; }
+    .notify-card {
+      position: relative; overflow: hidden;
+      background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 30px 28px;
+      text-align: center;
+    }
+    .notify-card::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(500px circle at 50% -20%, rgba(245,158,11,0.14), transparent 60%); }
+    .notify-card .n-pill {
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--amber); background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.35);
+      padding: 4px 11px; border-radius: 999px; display: inline-block; position: relative;
+    }
+    .notify-card h2 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 900; margin: 14px 0 6px; position: relative; }
+    .notify-card p.sub { color: var(--dim); margin: 0 0 20px; position: relative; }
+    .notify-card form { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; position: relative; }
+    .notify-card label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .notify-card input[type="email"] {
+      flex: 1 1 260px; min-width: 0; max-width: 340px; padding: 13px 16px; border-radius: 12px;
+      border: 1px solid var(--line); background: rgba(255,255,255,0.05); color: var(--text);
+      font-size: 0.98rem; font-family: inherit;
+    }
+    .notify-card input[type="email"]::placeholder { color: var(--dim); }
+    .notify-card input[type="email"]:focus { outline: none; border-color: var(--amber); box-shadow: 0 0 0 3px rgba(245,158,11,0.2); }
+    .notify-card button {
+      padding: 13px 26px; border-radius: 12px; border: 0; cursor: pointer;
+      background: linear-gradient(135deg, var(--amber), #ef4444); color: #fff; font-weight: 700; font-size: 0.98rem;
+      transition: transform .15s, box-shadow .15s; box-shadow: 0 8px 24px rgba(245,158,11,0.3);
+    }
+    .notify-card button:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(245,158,11,0.42); }
+    .notify-card .fine { color: var(--dim); font-size: 0.8rem; margin: 14px 0 0; opacity: 0.85; position: relative; }
+
     footer { border-top: 1px solid var(--line); margin-top: 90px; padding: 44px 22px 54px; }
     .foot { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
     .foot .brand svg { width: 36px; height: 36px; }
@@ -271,6 +303,7 @@
     </a>
     <div class="nav-links">
       <a href="#games">Games</a>
+      <a href="press/">Press</a>
       <a href="mailto:playhypegames@gmail.com">Contact</a>
     </div>
   </nav>
@@ -365,6 +398,30 @@
     </div>
   </main>
 
+  <section class="notify-sec" id="notify" aria-labelledby="notify-title">
+    <div class="notify-card">
+      <span class="n-pill">Coming soon</span>
+      <h2 id="notify-title">Get notified when Freedem Birdz drops</h2>
+      <p class="sub">Our flappy tap-to-flap game is almost here. Leave your email and we'll ping you the moment it hits the App Store.</p>
+
+      <!-- TODO(SAL): replace form action with Buttondown/Formspree endpoint -->
+      <!-- Example once a real endpoint exists (delete the mailto form below and use this):
+      <form action="https://buttondown.email/api/emails/embed-subscribe/playhypegames" method="POST">
+        <label for="home-nb-email">Email address</label>
+        <input id="home-nb-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit">Notify me</button>
+      </form>
+      -->
+
+      <form action="mailto:playhypegames@gmail.com?subject=Notify%20me%3A%20Freedem%20Birdz" method="post" enctype="text/plain">
+        <label for="home-notify-email">Email address</label>
+        <input id="home-notify-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="fine">Opens your email app with a pre-filled note &mdash; just hit send. We'll only use your address to tell you about the launch.</p>
+    </div>
+  </section>
+
   <footer>
     <div class="foot">
       <div class="foot-col">
@@ -392,6 +449,7 @@
         <a href="ballup/">Ball Up</a>
         <a href="swarmly/">Swarmly</a>
         <a href="freedembirdz/">Freedem Birdz</a>
+        <a href="press/">Press Kit</a>
       </div>
     </div>
   </footer>
